@@ -21,7 +21,7 @@ function countPositivesSumNegatives(input){
             return [];
         }
     }
-    let countPositives = positives.length;
+    let countPositives = positives.length;  
     let sumNegatives = negatives.reduce((a,b) => a + b, 0);
 
     let returnedArray = [countPositives, sumNegatives];
