@@ -1,0 +1,22 @@
+//Write a function which calculates the average of the numbers in a given list.
+
+//Note: Empty arrays should return 0.
+
+//P: takes in an array of numbers
+//R: return the average (numbers added/ total number of nums)
+//E: findAverage([1,1,1]), 1); (findAverage([1,2,3]), 2)
+//P: create a function which iterates through an array and adds all of the numbers together. Then divide the total by the length of the array. 
+
+function findAverage(array){
+    let numOr0 = n => isNaN(n) ? 0 : n;
+    if(n){
+        let sum = array.reduce((a, b) => numOr0(a) + numOr0(b), 0);
+    let totalNums = array.length;
+    let average = sum/totalNums; 
+    return average; 
+    } else {
+        return 0; 
+    }
+    
+    
+}
